@@ -1,0 +1,132 @@
+deck
+	mgmtcolor="crimson"
+	servicecolor="gold"
+	salescolor="blue"
+	conscolor="tan"
+	prodcolor="rgb(101,67,33)"
+	sourcelink="https://www.bls.gov/cps/cpsaat11.htm"
+
+	mx=50
+	my=50
+	titlesize=2.5
+	subsize=2
+	footsize=titlesize/2
+	asize=45
+	arcsize=110
+
+	slide
+		ctext "OCCUPATIONS OF AFRICAN AMERICANS AND WHITES IN THE USA (2019)." mx 95 titlesize "serif"
+		ctext "AFRICAN AMERICANS."                            mx 87 subsize
+		ctext "WHITES."                                       mx 12 subsize
+		ctext "Source: US Bureau of Labor Statistics, Labor Force Statistics from the Current Population Survey"         mx  5 footsize "sans" "" 100 sourcelink
+
+		topa1=35
+		topa2=topa1+arcsize
+		bota1=topa1+180
+		bota2=topa2+180
+
+
+		// Black Stats:
+		// Management 31.8%, Service: 23.8%, Sales: 22.4%, Construction: 5.7%, Production: 16.3%
+		blackmgmt=0.318*arcsize
+		blackservice=0.238*arcsize
+		blacksales=0.224*arcsize
+		blackcons=0.057*arcsize
+		blackprod=0.163*arcsize
+
+		a1=topa2
+		a2=a1-blackmgmt
+		arc mx my asize asize a1 a2 asize mgmtcolor
+
+		a1=a2
+		a2=a1-blackservice
+		arc mx my asize asize a1 a2 asize servicecolor
+		
+		a1=a2
+		a2=a1-blacksales
+		arc mx my asize asize a1 a2 asize salescolor 60
+
+		a1=a2
+		a2=a1-blackcons
+		arc mx my asize asize a1 a2 asize conscolor
+
+		a1=a2
+		a2=a1-blackprod
+		arc mx my asize asize a1 a2 asize prodcolor 80
+
+
+		// White Stats:
+		// Management 41.4%, Service: 15.9%, Sales: 21.3%, Construction: 10.1%, Production: 11.3%
+		whitemgmt=0.414*arcsize
+		whiteservice=0.159*arcsize
+		whitesales=0.213*arcsize
+		whitecons=0.101*arcsize
+		whiteprod=0.113*arcsize
+
+		a1=bota2
+		a2=a1-whitemgmt
+		arc mx my asize asize a1 a2 asize mgmtcolor
+
+		a1=a2
+		a2=a1-whiteservice
+		arc mx my asize asize a1 a2 asize servicecolor
+		
+		a1=a2
+		a2=a1-whitesales
+		arc mx my asize asize a1 a2 asize salescolor 60
+
+		a1=a2
+		a2=a1-whitecons
+		arc mx my asize asize a1 a2 asize conscolor
+
+		a1=a2
+		a2=a1-whiteprod
+		arc mx my asize asize a1 a2 asize prodcolor 80
+
+		// Slice labels
+
+		// Blacks
+		ctext "31.8%" 25.0 75 subsize
+		ctext "23.8%" 45.0 80 subsize
+		ctext "22.4%" 60.0 80 subsize
+		ctext "5.7%"  74.0 77 subsize
+		ctext "16.3%" 80.0 72 subsize
+
+		// Whites
+		ctext "41.4%" 70.0 25 subsize
+		ctext "15.9%" 50.0 17 subsize
+		ctext "21.3%" 38.0 20 subsize
+		ctext "10.1%" 26.0 25 subsize
+		ctext "11.3%" 20.0 30 subsize
+
+
+		// Legends
+		cx1=10
+		cx2=88
+		cr=4
+
+		legsize=1.5
+		circle cx1 54 cr mgmtcolor
+		circle cx1 44 cr salescolor 60
+		cx1+=3
+		text "MANAGEMENT, PROFESSIONAL"   cx1 54.0 legsize
+		text "AND RELATED."               cx1 52.5 legsize
+
+		text "SALES AND"                  cx1 44.5  legsize
+		text "OFFICE."                    cx1 43.0  legsize
+
+		circle cx2 59 cr servicecolor
+		circle cx2 49 cr prodcolor 80
+		circle cx2 41 cr conscolor
+
+		cx2-=3
+		etext "SERVICE."                          cx2  58.5 legsize
+
+		etext "PRODUCTION, TRANSPORTATION AND"    cx2  49.5 legsize
+		etext "MATERIAL MOVING."                  cx2  48.0 legsize
+
+		etext "NATURAL RESOURCES,"                cx2  42.0 legsize
+		etext "CONSTRUCTION AND"                  cx2  40.5 legsize
+		etext "MAINTENANCE."                      cx2  39.0 legsize
+	eslide
+edeck
