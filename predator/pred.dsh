@@ -1,0 +1,42 @@
+//
+// For-Profit enrollment by Ownership
+// See: https://nbviewer.jupyter.org/github/charlieeatonphd/agilepredators/blob/master/Predators_Figure1_20200116.ipynb
+//
+opts="-left=15 -textsize=1.5 -bottom=10 -fulldeck=f -grid -val=f -xlabel=5 -bar=f -vol -volop=100 -yrange=0,2.5,0.5 -min=0 -max=2.5"
+deck
+	gright=90
+	top=90
+	gtop=top-20
+	tsize=3
+	nsize=tsize/2
+	bsize=tsize/3
+	nx=gright-2
+
+	slide "linen" "black"
+		ctext "FOR-PROFIT ENROLLMENT BY OWNERSHIP."   50 top tsize "serif"
+		top-=4
+		//textfile "predsubhead.txt"                    20 top nsize
+		textblock "Between 1990 and 2015 the enrollment of publicly-traded for-profit institutions outstripped their private counterparts, with the sharpest growth occurring from 2005-2011. During this period publicly traded enrollment was  2-3 times greater than privately held institutions." 20 top 50 nsize
+		top=gtop+2
+		ctext "Enrollment in Millions"                10 top nsize
+
+		dchart opts -top gtop -right gright -color=green         -yaxis privheld+pubsum.d
+		dchart opts -top gtop -right gright -color=rgb(101,66,33)       privsum.d
+		dchart opts -top gtop -right gright -color=crimson              privheld.d
+
+		etext "PRIVATELY HELD"    nx 15 nsize "serif" "white"
+		etext "PRIVATE EQUITY"    nx 28 nsize "serif" "white"
+		etext "PUBLICLY TRADED"   nx 45 nsize "serif" "white"
+
+		ubrace 22 32 15 1 1 0.1
+		ctext "rough parity" 22 33 bsize
+
+		ctext "local spike" 42 33 bsize
+
+		ubrace 52 45 17 1 1 0.1
+		ctext "steady growth" 52 46 bsize
+
+		ubrace 72 68 12 1 1 0.1
+		ctext "maximum growth" 72 69 bsize
+	eslide
+edeck
