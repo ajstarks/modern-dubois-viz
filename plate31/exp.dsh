@@ -1,23 +1,12 @@
 deck
 	opts="-fulldeck=f -dot -vol -top=90 -bottom=40 -textsize=1 -title=f -yaxis -bar=f -line -val=f -datafmt=%0.2f -right 90 -dmin=t -yrange=0,25000,5000 -min=0 -max=25000"
-	slide
-		dchart opts -color=maroon black-exp.d
-		dchart opts -xlabel=0 -color=gray white-exp.d
-	eslide
-
-	slide
-		dchart -hbar -pct -right=75 black-exp.d
-	eslide
-
-		slide
-		dchart -hbar -pct -right=75 white-exp.d
-	eslide
-
+	
 	ts=2.2
 	tabtop=90
 	imy=80
 	subtop=tabtop+3
 	lw=0.05
+	canvas 2400 1800
 	slide
 		ctext "INCOME AND EXPENDITURE OF  AMERICAN FAMILIES (2019)." 50 96 ts
 		
@@ -62,8 +51,21 @@ deck
 		line 50.4 r2 46.7 52 lw
 		line 53.0 r2 48.0 52 lw
 		line 60.0 r2 59.0 52 lw
-	
-
-
 	eslide
+
+	slide
+		dchart opts -color=maroon black-exp.d
+		dchart opts -xlabel=0 -color=gray white-exp.d
+	eslide
+
+	slide
+		dchart -hbar -pct -right=75 black-exp.d
+	eslide
+
+		slide
+		dchart -hbar -pct -right=75 white-exp.d
+	eslide
+
+
+	
 edeck

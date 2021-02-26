@@ -1,0 +1,4 @@
+#!/bin/sh
+decksh exp.dsh > exp.xml
+pdfdeck -pagesize 2400,1800 exp.xml
+pngdeck -pagesize 2400,1800 exp.xml
