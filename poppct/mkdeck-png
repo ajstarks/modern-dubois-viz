@@ -1,0 +1,8 @@
+#!/bin/sh
+#awk '{printf "mkpoly 15 70 30 65 -2361.58 881.14 -1347.71 1323.91 \"\" \"%s\" a-%s.d\n", $2, $1}' popcolor.d | sh > a-allstates.dsh
+case $0 in
+	*mkdeck)
+		decksh uspop.dsh | pdf -pagesize $portrait -sans $duboisans -serif $duboiserif $* ;;
+	*mkdeck-png)
+		decksh uspop.dsh | pngdeck -pagesize $portrait -sans $duboisans -serif $duboiserif $* /dev/stdin ;;
+esac

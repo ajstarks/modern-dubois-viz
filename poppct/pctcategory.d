@@ -1,0 +1,10 @@
+40 - 36	MS	black
+36 - 32	LA	slategray
+32 - 28	GA,MD	darkgray
+28 - 24	AL,SC,DE	rgb(101,67,33)
+24 - 20	NC,VA		darkblue
+20 - 16	NY,TN,FL,AR,IL,MI	tan
+16 - 12	NJ,OH,PA,MO,CT,TX	crimson
+12 - 8	IN,NV,KY,MA,OK,RI	pink
+8 - 4	MN,WI,KS,CA,NE,AZ,WA,CO,AK,WV,IA	gold
+Under 4	NI,NC,NM,OR,SD,NH,ME,VT,WY,UT,ID,MT	tan 30%
