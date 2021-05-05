@@ -35,8 +35,64 @@ deck
 			li "2.0 - 1.6 MILLION"
 			li "1.6 - 1.2 MILLION"
 			li "1.2 - 0.8 MILLION"
-			li "0.4 - 0.4 MILLION"
+			li "0.8 - 0.4 MILLION"
 			li "UNDER 0.4 MILLION"
+		elist
+
+		bx=lx-lskip
+		by=ly+0.5
+		square bx by 3 "tan"
+		by-=bskip
+		square bx by 3 "crimson"
+		by-=bskip
+		square bx by 3 "pink"
+		by-=bskip
+		square bx by 3 "gold"
+		by-=bskip
+		square bx by 3 "tan" 30
+
+	eslide
+
+
+	// % Black population
+
+	slide
+		ctext "PERCENT BLACK POPULATION OF THE" 50 95 3.2 "serif"
+		ctext "UNITED STATES. (2021)" 50 92 3.2 "serif"
+		image "poppct.png" 50 50 1918 1186 60
+		lx=28
+		ly=25
+		bskip=4.75
+		hskip=40
+		lskip=4
+		list lx ly 2 "sans" "gray" 100 3
+			li "40 - 36 %"
+			li "36 - 32 %"
+			li "32 - 28 %"
+			li "28 - 24 %"
+			li "24 - 20 %"
+		elist
+		bx=lx-lskip
+		by=ly+0.5
+		
+		square bx by 3 "black"
+		by-=bskip
+		square bx by 3 "slategray"
+		by-=bskip
+		square bx by 3 "darkgray"
+		by-=bskip
+		square bx by 3 "rgb(101,67,33)"
+		by-=bskip
+		square bx by 3 "darkblue"
+
+
+		lx+=hskip
+		list lx ly 2 "sans" "gray" 100 3
+			li "20 - 16 %"
+			li "16 - 12 %"
+			li "12 - 8 %"
+			li " 8 - 4 %"
+			li "UNDER 4 %"
 		elist
 
 		bx=lx-lskip
