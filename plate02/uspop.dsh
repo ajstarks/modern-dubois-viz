@@ -75,15 +75,15 @@ deck
 		bx=lx-lskip
 		by=ly+0.5
 		
-		square bx by 3 "black"
+		square bx by bsize "black"
 		by-=bskip
-		square bx by 3 "slategray"
+		square bx by bsize "slategray"
 		by-=bskip
-		square bx by 3 "darkgray"
+		square bx by bsize "darkgray"
 		by-=bskip
-		square bx by 3 "rgb(101,67,33)"
+		square bx by bsize "rgb(101,67,33)"
 		by-=bskip
-		square bx by 3 "darkblue"
+		square bx by bsize "darkblue"
 
 
 		lx+=hskip
@@ -97,15 +97,15 @@ deck
 
 		bx=lx-lskip
 		by=ly+0.5
-		square bx by 3 "tan"
+		square bx by bsize "tan"
 		by-=bskip
-		square bx by 3 "crimson"
+		square bx by bsize "crimson"
 		by-=bskip
-		square bx by 3 "pink"
+		square bx by bsize "pink"
 		by-=bskip
-		square bx by 3 "gold"
+		square bx by bsize "gold"
 		by-=bskip
-		square bx by 3 "tan" 30
+		square bx by bsize "tan" 30
 
 	eslide
 edeck
