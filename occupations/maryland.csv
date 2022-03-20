@@ -1,0 +1,16 @@
+name,percent,color
+"Occupations of African Americans and Whites in Baltimore City (2016)","Analysis of Patterns of Employment by Race in Baltimore City and the Baltimore Metropolitan Area (2016)",
+"Black or African American",,
+"Education and\nHealthcare",30,crimson
+"Professions",28,gold
+"Trade and\nTransportation",22,steelblue
+"Arts and\nEntertainment",10,"rgb(220,220,220)"
+"Manufacturing and\nMechanical Industries",6,tan
+"Other",4,gray
+"Whites",,
+"Education and\nHealthcare",18,crimson
+"Professions",33,gold
+"Trade and\nTransportation",22,steelblue
+"Arts and\nEntertainment",10,"rgb(220,220,220)"
+"Manufacturing and\nMechanical Industries",14,tan
+"Other",3,gray

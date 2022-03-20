@@ -1,0 +1,2 @@
+#!/bin/sh
+fanchart -dir tb maryland.csv | pdfdeck -stdout  - > f.pdf 
